@@ -1,6 +1,5 @@
 "use client";
 
-// import { Spinner } from "@/app/components";
 import { AlertDialog, Button, Flex } from "@radix-ui/themes";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -29,13 +28,12 @@ const DeleteIssueButton = ({ issueId }: { issueId: number }) => {
         <AlertDialog.Trigger>
           <Button color="red" disabled={isDeleting}>
             delete issue 
-            {/* {isDeleting && <Spinner />} */}
           </Button>
         </AlertDialog.Trigger>
         <AlertDialog.Content>
           <AlertDialog.Title>Confirm Deletion</AlertDialog.Title>
           <AlertDialog.Description>
-            Are you sure you want to delete this issue? This action can't be
+            Are you sure you want to delete this issue? This action can not be
             undone.
           </AlertDialog.Description>
           <Flex mt="4" gap="3">
