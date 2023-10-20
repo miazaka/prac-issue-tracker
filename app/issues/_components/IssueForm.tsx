@@ -1,7 +1,8 @@
 "use client";
 
-import { Spinner } from "@/app/components";
+// import { Spinner } from "@/app/components";
 import ErrorMessage from "@/app/components/ErrorMessage";
+import Spinner from "@/app/components/Spinner";
 import { issueSchema } from "@/app/validationSchemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Issue } from "@prisma/client";
